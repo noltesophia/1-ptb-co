@@ -1,0 +1,30 @@
+[
+  [
+    "Assigning payroll data alert",
+    "Assessing alert",
+    "Providing comment",
+    "Closing alert",
+    "Processing alert"
+  ],
+  [
+    "Assigning payroll data alert",
+    "Assessing alert",
+    "Aligning with line manager/employee",
+    "Checking data in source system",
+    "Correcting payroll-specific data",
+    "Providing comment",
+    "Closing alert",
+    "Processing alert"
+  ],
+  [
+    "Assigning payroll data alert",
+    "Assessing alert",
+    "Aligning with line manager/employee",
+    "Checking data in source system",
+    "Aligning with source system administrator",
+    "Correcting payroll-specific data",
+    "Providing comment",
+    "Closing alert",
+    "Processing alert"
+  ]
+]

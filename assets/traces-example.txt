@@ -1,0 +1,15 @@
+[
+  [
+    "Making interest payment",
+    "Deciding payment method",
+    "Posting bank payment to general ledger"
+  ],
+  [
+    "Making interest payment",
+    "Deciding payment method",
+    "Displaying payment schedule",
+    "Generating payment request",
+    "Processing payment request",
+    "Posting manual payment to general ledger"
+  ]
+]

@@ -1,0 +1,26 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces Text-to-Model Pipeline Overview}}{2}{figure.2.1}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2}{\ignorespaces Generated \gls {signavio} \glsxtrshort {bpmn} 2.0 diagram using the \nameref {sec:traces} approach}}{8}{figure.4.2}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3}{\ignorespaces Screenshot of the Mermaid.js approach prototype}}{11}{figure.6.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Screenshot of the \nameref {sec:traces} approach prototype}}{12}{figure.6.4}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5}{\ignorespaces Example Mermaid.js code for the graph in \autoref {fig:mermaid-example-graph}}}{IX}{figure.Alph0.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Example Mermaid.js graph for code in \autoref {lst:mermaid-example-code}}}{IX}{figure.Alph0.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Extract of \gls {signavio}-compliant \glsxtrshort {bpmn} 2.0 \glsxtrshort {json} Code}}{X}{figure.Alph0.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Prompt for generating a Mermaid.js graph}}{XI}{figure.Alph0.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Example process description}}{XII}{figure.Alph0.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Generated Mermaid.js graph}}{XIII}{figure.Alph0.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Prompt for extracting a unique set of \glspl {trace} from a process description}}{XIV}{figure.Alph0.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Example of a unique set of \glspl {trace}.}}{XV}{figure.Alph0.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Tested input process description for diagram in \autoref {fig:traces-test-output}.}}{XV}{figure.Alph0.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Generated set of traces (artificial \gls {event log}) for the input process description in \autoref {lst:traces-test-input}.}}{XVI}{figure.Alph0.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Example of a more complex process description}}{XVI}{figure.Alph0.15}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,0 +1,50 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%>>>>>>>
+%%%%%%%%%%% Titelblatt
+
+%% Anordnung und Aussehen von Titel und Untertitel
+
+\subject{\large\type}
+
+\title{
+	\normalfont\endgraf\rule{\textwidth}{.4pt}
+	\begingroup
+	\centering
+	\linespread{1.5}
+	\LARGE\topic\\
+	% \normalsize\subtopic
+	\endgroup
+	\endgraf\rule{\textwidth}{.4pt}
+}
+
+\date{\normalsize abgegeben am \today\\
+	an der \\
+	Hochschule für Wirtschaft und Recht Berlin\vspace{5mm}}
+
+\publishers{
+	\begin{tabular}{l l}
+		\textbf{\normalsize{By: }}                   & \normalsize{\studentName} \tabularnewline
+		\textbf{\normalsize{Matriculation number: }} & \normalsize{\matrikelNummer} \tabularnewline
+		\textbf{\normalsize{Department:}}            & \normalsize{\fachbereich}  \tabularnewline
+		\textbf{\normalsize{Field of study:}}        & \normalsize{\fachrichtung} \tabularnewline
+		\textbf{\normalsize{Year of study:}}         & \normalsize{\jahrgang} \tabularnewline
+		\textbf{\normalsize{Semester:}}              & \normalsize{\semester} \tabularnewline
+		\textbf{\normalsize{Training company:}}      & \normalsize{\company}  \tabularnewline
+		\textbf{\normalsize{Evaluating supervisor:}} & \normalsize{\betreuerHS} \tabularnewline
+		\textbf{\normalsize{Company supervisor:}}    & \normalsize{\betreuerUnt} \tabularnewline
+		\textbf{\normalsize{Word count:}}            & \normalsize{\wordcount} \tabularnewline
+		\textbf{\normalsize{Company approval: }}     & \underline{\hspace{4cm}}
+
+		%\textbf{\normalsize{Erstgutachter:}} & \normalsize{\betreuerUnt} \tabularnewline
+		%\textbf{\normalsize{Zweitgutachter:}} & \normalsize{\betreuerHS} \tabularnewline
+	\end{tabular}
+}
+
+\titlehead{
+	\begin{center}
+		\includegraphics[scale=0.9]{../assets/images/HWR_Logo_farbig.jpg}
+		\hfill
+		\includegraphics[scale=0.9]{../assets/images/SAP_Signavio_Logo.png}
+	\end{center}
+}
+
+\maketitle

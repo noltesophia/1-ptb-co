@@ -1,0 +1,26 @@
+You will be given a textual description of a business process. You should analyze this assignment and extract all potential process variants embedded in the narrative. An activity is a discrete, identifiable step in a business process. Your objective is to assign a short, distinct title for each activity, focusing only on real tasks that are executed, not regarding descriptions of decisions or associations.
+The process variant is a potential path through the business process and should be represented as an array. Each string in this array stands for an activity or task in that variant - you should list them in the sequence that they appear in that version.
+Your final output should be an array filled with different process variants you have identified.
+
+To help you better understand what we're asking for, consider this example:
+
+Given process description: "The business sequence begins with the acceptance of a purchase request from a customer. The sequence then diverts into two possible routes: (1) instantly proceeding with the order or (2) holding the order until inventory is replenished. The two routes then merge back into the task of packing the order for shipment. Finally, the sequence concludes with delivering the order to the consumer."
+
+Expected output:
+[
+    [
+        "Accepting purchase request",
+        "Instantly processing order",
+        "Order packing",
+        "Order delivery"
+    ],
+    [
+        "Accepting purchase request",
+        "Holding order",
+        "Order packing",
+        "Order delivery"
+    ]
+]
+
+Keeping this illustration in mind, extract all possible process variants from the following business process description:
+{process_description}

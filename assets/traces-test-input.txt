@@ -1,0 +1,5 @@
+The process starts when a payroll data alert is assigned. First, the agent assesses the alert. Then, if the alert does not require a data change, the agent provides a comment and closes the alert. The process ends with the alert having been processed.
+
+If, after assessing the alert, the alert requires data change, the agent aligns with the line manager and/or employee, checks if the data needs to be updated in the source system, and checks if the data needs to be updated in the source system. If the data does not need to be updated in the source system, the agent corrects the payroll-specific data, provides a comment, and closes the alert. Then, the process ends with the alert having been processed.
+
+If, after checking if the data needs to be updated in the source system, the data does need to be updated, the agent aligns with the source system administrator, corrects the payroll-specific data, provides a comment, and closes the alert. Then, the process ends with the payroll data alert having been processed.

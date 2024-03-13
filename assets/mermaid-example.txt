@@ -1,0 +1,8 @@
+graph LR
+1:startevent:((startevent)) --> 2:task:(Sit on the couch)
+2:task: --> 3:task:(Watch TV)
+3:task: --> 4:exclusivegateway:{x}
+4:exclusivegateway:{x} --> |Feeling hungry| 5:task:(Order a pizza)
+4:exclusivegateway:{x} --> |Not feeling hungry| 6:task:(Watch a movie)
+5:task: --> 7:endevent:((endevent))
+6:task: --> 7:endevent:

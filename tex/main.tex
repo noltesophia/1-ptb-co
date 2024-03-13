@@ -1,0 +1,364 @@
+\documentclass[
+	12pt, %Schriftgröße
+	a4paper,
+	liststotoc, %Inhaltsverzeichniseinträge für Listen (z.B. Abbildungen)
+	bibtotoc,%Inhaltsverzeichniseinträge f+r Quellen 
+	pointlessnumbers, %Entfernt Punkt hinter Gliederungsnummern
+	english, %Sprachpaket
+	headsepline, %Headertrennlinie
+	%footsepline, %Footertrennlinie
+	oneside %einseitiges Druckformat %%% Unterdrücken der leeren Seite nach Titelblatt
+	]{scrbook} %Dokumentenklasse (Koma-Script)
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{markdown}
+\usepackage{chronology}
+\usepackage{url}
+\usepackage{graphicx} %Bilder einfügen
+\usepackage{float}
+\usepackage{microtype}
+\usepackage[a4paper, margin=1in, headsep=2cm]{geometry}
+\usepackage[right]{eurosym} %Euro-Zeichen
+\usepackage{amssymb}
+\usepackage{babel}
+\usepackage{fontenc}
+\usepackage{graphicx}
+\usepackage{cite} %Quellenangaben
+\usepackage[numbers]{natbib}
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+\usepackage{scrhack}
+\usepackage{breakurl}
+\usepackage{bookmark}
+\def\UrlBreaks{\do\/\do-}
+
+\usepackage{setspace} % Zeilenabstand
+\usepackage[figure]{hypcap}
+\usepackage[toc,page]{appendix}
+%\usepackage[titletoc]{appendix}
+\usepackage[english]{translator}
+\usepackage{listings,xcolor} %Codeanzeige
+\lstdefinestyle{interfaces}{
+  float=tp,
+  floatplacement=tbp,
+  abovecaptionskip=-5pt
+}
+
+%\usepackage[nottoc,numbib]{tocbibind}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{pdfpages}
+\usepackage{color}
+\definecolor{lst-gray}{rgb}{0.98,0.98,0.98}
+\definecolor{lst-blue}{RGB}{40,0.0,255}
+\definecolor{lst-green}{RGB}{65,128,95}
+\definecolor{lst-red}{RGB}{200,0,85}
+
+\onehalfspacing
+
+\lstset{literate=
+  {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+  {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+  {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+  {À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+  {ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+  {Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+  {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+  {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+  {Ã}{{\~A}}1 {ã}{{\~a}}1 {Õ}{{\~O}}1 {õ}{{\~o}}1
+  {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+  {ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
+  {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+  {€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
+  {»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1
+}
+
+\usepackage{color}
+
+% TC:incbib
+% init word counter
+\newcommand{\quickwordcount}[1]{%
+  \immediate\write18{texcount -1 -sum -merge -q -relaxed #1.tex > #1-words.sum }%
+  \input{#1-words.sum}words%
+}
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}}
+
+%Hinzufügen von Json 
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+
+\lstdefinelanguage{json}{
+    basicstyle=\normalfont\ttfamily,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=lines,
+    backgroundcolor=\color{background},
+    literate=
+     *{0}{{{\color{numb}0}}}{1}
+      {1}{{{\color{numb}1}}}{1}
+      {2}{{{\color{numb}2}}}{1}
+      {3}{{{\color{numb}3}}}{1}
+      {4}{{{\color{numb}4}}}{1}
+      {5}{{{\color{numb}5}}}{1}
+      {6}{{{\color{numb}6}}}{1}
+      {7}{{{\color{numb}7}}}{1}
+      {8}{{{\color{numb}8}}}{1}
+      {9}{{{\color{numb}9}}}{1}
+      {:}{{{\color{punct}{:}}}}{1}
+      {,}{{{\color{punct}{,}}}}{1}
+      {\{}{{{\color{delim}{\{}}}}{1}
+      {\}}{{{\color{delim}{\}}}}}{1}
+      {[}{{{\color{delim}{[}}}}{1}
+      {]}{{{\color{delim}{]}}}}{1},
+}
+
+\usepackage{chngcntr}
+\usepackage{verbatim}
+\usepackage{wrapfig}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+\usepackage[toc, acronym, nonumberlist, nogroupskip, shortcuts]{glossaries-extra}
+% \usepackage{mathptmx} % times new roman font schriftart
+ 
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color
+  basicstyle=\footnotesize,        % size of fonts used for the code
+  breaklines=true,                 % automatic line breaking only at whitespace
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  keywordstyle=\color{blue},       % keyword style
+  stringstyle=\color{mymauve},     % string literal style
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Sonderformatierung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Seitenabstände für Titelblatt definieren
+\geometry{verbose,tmargin=1cm,bmargin=2cm,lmargin=3cm,rmargin=3cm} 
+
+% Hurenkinder und Schusterjungen verhindern (Ja, das heißt wirklich so!!)
+\clubpenalty = 10000 \widowpenalty = 10000 \displaywidowpenalty = 10000 
+
+\newcommand{\footfigref}[1]{\footnote{Fig. \ref{#1} on page \pageref{#1}}}
+
+%% Bei Referenzen im Text wird jetzt bei allen Ebenen "Kapitel" vorgestellt, z.b. Kapitel 2, Kapitel 2.2, Kapitel 6.3.2
+% \addto\extrasngerman{%
+%     \def\sectionautorefname{Kapitel}%
+%     \def\subsectionautorefname{Kapitel}%
+%     \def\subsubsectionautorefname{Kapitel}%
+%     }
+
+% Vertikaler Abstand zwischen Ende Textblock - Ende Fußzeile --> Abstand der Seitenzahl von Rand erhöhen 
+\setlength{\footskip}{10mm}
+
+% Abstand vor/nach Überschriften verändern
+
+\RedeclareSectionCommand[%
+    beforeskip=0\baselineskip,
+    afterskip=0.5\baselineskip
+]{chapter}
+
+\RedeclareSectionCommand[%
+    beforeskip=0.5\baselineskip,
+    afterskip=0.5\baselineskip
+]{section}
+
+\RedeclareSectionCommand[%
+    beforeskip=0.1\baselineskip,
+    afterskip=0.1\baselineskip
+]{subsection}
+
+\RedeclareSectionCommand[%
+    beforeskip=0.01\baselineskip,
+    %%afterskip=0.2\baselineskip
+]{paragraph}
+
+\setlength{\abovecaptionskip}{4pt}  % 1pc=12pt 
+\setlength{\belowcaptionskip}{0pt}
+%\setlength{\textfloatsep}{4pt}
+\setlength{\intextsep}{1pc}
+\setlength{\headheight}{28.72635pt}
+
+%% Verkleinerung der Textgröße unter Abbildungen
+\addtokomafont{caption}{\small}
+
+% Den Punkt am Ende der Glossareinträge deaktivieren
+\renewcommand*{\glspostdescription}{}
+
+%Glossar-Befehle anschalten
+
+% sorgt dafür, dass bei Leerzeile die Einrückung verhindert und stattdessen eine Leerzeile eingefügt wird % erspart bigskips und erhöht die Lesbarkeit im LaTeX-Text 
+\KOMAoptions{parskip=full*}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\includegraphics[scale=0.9]{../assets/images/HWR_Logo_farbig.jpg}}
+\rhead{\includegraphics[scale=0.9]{../assets/images/SAP_Signavio_Logo.png}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \lhead{\includegraphics[scale=0.9]{../assets/images/HWR_Logo_farbig.jpg}}
+  \cfoot{\thepage}
+  \rhead{\includegraphics[scale=0.9]{../assets/images/SAP_Signavio_Logo.png}}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+\usepackage[ 
+  % colorlinks,        % Links ohne Umrandungen in zu wählender Farbe 
+  % linkcolor=black,   % Farbe interner Verweise 
+  % filecolor=black,   % Farbe externer Verweise 
+  % citecolor=black,   % Farbe von Zitaten 
+  % urlcolor=blue,
+  % breaklinks	    % Farbe von Links
+]{hyperref} %Verlinkungen
+
+\author{Bruno Zirnstein}
+
+% ändert Titelschriftart in Serifen-Normalschriftart
+\addtokomafont{disposition}{\rmfamily} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Textbausteine
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% Studentenname
+\newcommand{\studentName}{Bruno Zirnstein}
+%%%%%%%%%%%% Matr.-Nr.
+\newcommand{\matrikelNummer}{77220607682}
+%%%%%%%%%%%% Typ der Arbeit
+\newcommand{\type}{Practical Transfer Report}
+%%%%%%%%%%%% Thema
+\newcommand{\topic}{Extraction of BPMN process models from unstructured textual descriptions}
+%%%%%%%%%%%% Untertitel
+\newcommand{\subtopic}{Hier Untertitel eintragen}
+%%%%%%%%%%%% Studienbereich
+\newcommand{\fachbereich}{Cooperative studies · Technology}
+%%%%%%%%%%%% Fachrichtung
+\newcommand{\fachrichtung}{Computer Science}
+%%%%%%%%%%%% Betrieb
+\newcommand{\company}{SAP SE}
+%%%%%%%%%%%% Betreuer HWR
+\newcommand{\betreuerHS}{M. Eng. Carl Dolling}
+%%%%%%%%%%%% Betreuer Unternehmen
+\newcommand{\betreuerUnt}{M. Sc. Christian Warmuth}
+%%%%%%%%%%%% Jahrgang
+\newcommand{\jahrgang}{2022}
+%%%%%%%%%%%% Semester
+\newcommand{\semester}{3}
+%%%%%%%%%%%% Word count
+\newcommand{\wordcount}{\quickwordcount{main}}
+
+
+
+% Glossar einbinden
+\makenoidxglossaries
+\setabbreviationstyle[acronym]{long-short}
+% \glssetcategoryattribute{acronym}{glossdesc}{title}
+\renewcommand{\glsnamefont}[1]{\textbf{\makefirstuc{#1}}}
+\setlength{\glsdescwidth}{11.6cm}
+\input{glossar}
+
+%init counter
+\newcounter{originalpagenumber}
+
+%Dokument beginnt hier 
+\begin{document}
+%TC:ignore
+
+% falsche Default-Silbentrennung überschreiben
+\include{hyphenation}
+
+%Die ersten Kapitel werden Römisch numeriert und werden (in diesem Beispiel)
+%nicht mit ins Inhaltsverzeichnis aufgenommen
+\pagenumbering{Roman}
+
+% Add blocking notice and NDA if necessary
+\includepdf[pages=-]{blocking-notice.pdf}
+\includepdf[pages=-]{NDA.pdf}
+
+% Titelseite
+\include{00_titelseite}
+
+% Seitenabstände für restliches Dokument neu definieren
+\newgeometry{verbose,tmargin=4cm,bmargin=2cm,lmargin=21mm,rmargin=3cm}
+
+% Abstract
+\newpage
+\include{abstract}
+
+\onehalfspacing % anderthalbfacher Zeilenabstand
+%Inhaltsverzeichnis 
+\renewcommand*{\contentsname}{Table of Contents}
+\tableofcontents{}
+% \addcontentsline{toc}{chapter}{Table of contents}
+
+\clearpage
+
+% \deftranslation[to=German]{Glossary}{Glossar}
+% \deftranslation[to=German]{Acronyms}{Akronyme}
+\printnoidxglossaries
+
+\clearpage
+
+%%%%Abbildungsverzeichnis(If needed)
+
+\listoffigures
+\newpage
+
+%%%%Tabellenverzeichnis(If needed)
+
+% \listoftables
+% \newpage
+
+\setcounter{originalpagenumber}{\number\value{page}}
+\setcounter{page}{0}
+%Arabische Nummrierung 
+\pagenumbering{arabic}
+% start word counting
+%TC:endignore
+
+% Einleitung
+\include{01_einleitung}
+
+%Hauptteil
+\include{02_hauptteil}
+
+%Schluss
+\include{03_schluss}
+
+\pagenumbering{Roman}
+\setcounter{page}{\number\value{originalpagenumber}}
+
+%TC:ignore
+
+%Literaturverzeichnis
+% \addtocontents{toc}{\protect\vspace*{\baselineskip}}
+\nocite{*}
+\bibliographystyle{abbrvnat}
+\bibliography{../assets/literature/sources}
+
+\newpage
+
+%Anhang
+\include{04_anhang}
+
+%Ehrenwörtlich erklährung 
+\include{05_ehrenwoertlicheerklaerung}
+
+%TC:endignore
+\end{document}

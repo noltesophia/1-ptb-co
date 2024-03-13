@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+A level-1 auxiliary file: hyphenation.aux
+Reallocating 'name_of_file' (item size: 1) to 18 items.
+A level-1 auxiliary file: 00_titelseite.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 18 items.
+A level-1 auxiliary file: 01_einleitung.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: 02_hauptteil.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: 03_schluss.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: abbrvnat.bst
+Reallocating 'name_of_file' (item size: 1) to 29 items.
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: 04_anhang.aux
+Reallocating 'name_of_file' (item size: 1) to 33 items.
+A level-1 auxiliary file: 05_ehrenwoertlicheerklaerung.aux
+Database file #1: ../assets/literature/sources.bib
+Warning--entry type for "omg2011bpmn" isn't style-file defined
+--line 60 of file ../assets/literature/sources.bib
+Warning--entry type for "bpmn-conformance" isn't style-file defined
+--line 137 of file ../assets/literature/sources.bib
+Warning--empty publisher in text-to-bp-elem
+You've used 17 entries,
+            2773 wiz_defined-function locations,
+            713 strings with 8648 characters,
+and the built_in function-call counts, 9087 in all, are:
+= -- 782
+> -- 667
+< -- 12
++ -- 223
+- -- 206
+* -- 736
+:= -- 1419
+add.period$ -- 66
+call.type$ -- 17
+change.case$ -- 114
+chr.to.int$ -- 17
+cite$ -- 35
+duplicate$ -- 367
+empty$ -- 650
+format.name$ -- 227
+if$ -- 1915
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 11
+newline$ -- 103
+num.names$ -- 76
+pop$ -- 266
+preamble$ -- 1
+purify$ -- 99
+quote$ -- 0
+skip$ -- 329
+stack$ -- 0
+substring$ -- 182
+swap$ -- 64
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 177
+warning$ -- 1
+while$ -- 69
+width$ -- 0
+write$ -- 249
+(There were 3 warnings)

@@ -1,0 +1,9 @@
+The process starts when a job requisition is posted. First, an agent reviews the type of job requisition. Then, if the requisition is approved, the agent assigns candidates from related evergreen requisitions and checks if a sourcing recruiter is needed. If no sourcing recruiter is needed, the agent assigns candidates from the candidate pool and uses talent pipelines and communities.
+
+If, after assigning candidates from related evergreen requisitions, a sourcing recruiter is needed, the agent assigns candidates from the candidate pool and checks if additional candidates are needed. If no additional candidates are needed, the process ends with the talent pipelines and communities being utilized.
+
+If, after checking if additional candidates are needed, the agent needs to find more candidates, the agent runs a candidate database search in RMK and searches through other channels. Then, the agent contacts the candidate and verifies interest in the position, and the process ends with the agent utilizing talent pipelines and communities.
+
+If, after reviewing the type of job requisition, the requisition is not approved, the agent assigns candidates from the candidate pool and checks if additional candidates are needed. If no additional candidates are needed, the agent utilizes talent pipelines and communities.
+
+If, after checking if additional candidates are needed, the agent needs to find more candidates, the agent runs a candidate database search in RMK and searches through other channels. Then, the agent contacts the candidate and verifies interest in the position, and the process ends with the agent utilizing talent pipelines and communities.

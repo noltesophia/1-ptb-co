@@ -1,0 +1,6 @@
+\chapter{Conclusion}
+In conclusion, the task of extracting BPMN process models from unstructured textual descriptions was investigated, motivated by the need of large companies to leverage their hidden process knowledge stored in internal documents. Three different approaches using \glspl{llm} were presented and assessed, namely Direct Translation, Intermediate Graph Representation, and \nameref*{sec:traces}.
+
+The first two approaches were not feasible for the current \glsentrylong{poc} project, as they required too much effort and failed to produce a compliant output format. The  \nameref*{sec:traces} approach, on the other hand, was able to solve the crucial problems of the task, such as extracting the activities and the control flow, always outputting Signavio-compliant \acs{json} code and being very efficient in terms of implementation effort. However, the approach does not extract additional information and still struggles with more difficult process descriptions, but it also leaves room for further development and improvement.
+
+\newpage

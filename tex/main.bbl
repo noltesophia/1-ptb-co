@@ -1,0 +1,136 @@
+\begin{thebibliography}{17}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Augusto et~al.(2019)Augusto, Conforti, Dumas, La~Rosa, and
+  Polyvyanyy]{split-miner}
+A.~Augusto, R.~Conforti, M.~Dumas, M.~La~Rosa, and A.~Polyvyanyy.
+\newblock Split miner: automated discovery of accurate and simple business
+  process models from event logs.
+\newblock \emph{Knowledge and Information Systems}, 59, 05 2019.
+\newblock \doi{10.1007/s10115-018-1214-x}.
+
+\bibitem[Bellan et~al.(2021)Bellan, Dragoni, and
+  Ghidini]{process-extraction-from-text}
+P.~Bellan, M.~Dragoni, and C.~Ghidini.
+\newblock Process extraction from text: state of the art and challenges for the
+  future.
+\newblock \emph{CoRR}, abs/2110.03754, 2021.
+\newblock URL \url{https://arxiv.org/abs/2110.03754}.
+
+\bibitem[Bellan et~al.(2022)Bellan, Dragoni, and Ghidini]{text-to-bp-elem}
+P.~Bellan, M.~Dragoni, and C.~Ghidini.
+\newblock \emph{Extracting Business Process Entities and Relations from Text
+  Using Pre-trained Language Models and In-Context Learning}, pages 182--199.
+\newblock 09 2022.
+\newblock ISBN 978-3-031-17603-6.
+\newblock \doi{10.1007/978-3-031-17604-3_11}.
+
+\bibitem[{Contributors to Mermaid}(2014)]{mermaid-js}
+{Contributors to Mermaid}.
+\newblock Mermaid: Generate diagrams from markdown-like text, 2014.
+\newblock URL \url{https://mermaid.js.org/}.
+
+\bibitem[{Contributors to Streamlit}(2023)]{streamlit}
+{Contributors to Streamlit}.
+\newblock A faster way to build and share data apps., 2023.
+\newblock URL \url{https://github.com/streamlit/streamlit}.
+
+\bibitem[Dunzer et~al.(2019)Dunzer, Stierle, Matzner, and
+  Baier]{bpmn-event-log-conformance-checking}
+S.~Dunzer, M.~Stierle, M.~Matzner, and S.~Baier.
+\newblock Conformance checking: A state-of-the-art literature review.
+\newblock In \emph{Proceedings of the 11th International Conference on
+  Subject-Oriented Business Process Management}, S-BPM ONE '19, New York, NY,
+  USA, 2019. Association for Computing Machinery.
+\newblock ISBN 9781450362504.
+\newblock \doi{10.1145/3329007.3329014}.
+\newblock URL \url{https://doi.org/10.1145/3329007.3329014}.
+
+\bibitem[Franceschetti et~al.(2023)Franceschetti, Seiger, L{\'o}pez, Burattin,
+  Garc{\'i}a-Ba{\~{n}}uelos, and Weber]{process-model-ambiguity}
+M.~Franceschetti, R.~Seiger, H.~A. L{\'o}pez, A.~Burattin,
+  L.~Garc{\'i}a-Ba{\~{n}}uelos, and B.~Weber.
+\newblock A characterisation of ambiguity in bpm.
+\newblock In J.~P.~A. Almeida, J.~Borbinha, G.~Guizzardi, S.~Link, and
+  J.~Zdravkovic, editors, \emph{Conceptual Modeling}, pages 277--295, Cham,
+  2023. Springer Nature Switzerland.
+\newblock ISBN 978-3-031-47262-6.
+
+\bibitem[Friedrich et~al.(2011)Friedrich, Mendling, and
+  Puhlmann]{process-model-generation}
+F.~Friedrich, J.~Mendling, and F.~Puhlmann.
+\newblock Process model generation from natural language text.
+\newblock In H.~Mouratidis and C.~Rolland, editors, \emph{Advanced Information
+  Systems Engineering}, pages 482--496, Berlin, Heidelberg, 2011. Springer
+  Berlin Heidelberg.
+\newblock ISBN 978-3-642-21640-4.
+
+\bibitem[Grohs et~al.(2023)Grohs, Abb, Elsayed, and Rehse]{text-to-inter-rep}
+M.~Grohs, L.~Abb, N.~Elsayed, and J.-R. Rehse.
+\newblock Large language models can accomplish business process management
+  tasks, 2023.
+
+\bibitem[Kampik et~al.(2023)Kampik, Warmuth, Rebmann, Agam, Egger, Gerber,
+  Hoffart, Kolk, Herzig, Decker, van~der Aa, Polyvyanyy, Rinderle-Ma, Weber,
+  and Weidlich]{large-process-models}
+T.~Kampik, C.~Warmuth, A.~Rebmann, R.~Agam, L.~N.~P. Egger, A.~Gerber,
+  J.~Hoffart, J.~Kolk, P.~Herzig, G.~Decker, H.~van~der Aa, A.~Polyvyanyy,
+  S.~Rinderle-Ma, I.~Weber, and M.~Weidlich.
+\newblock Large process models: Business process management in the age of
+  generative ai, 2023.
+
+\bibitem[Klievtsova et~al.(2023)Klievtsova, Benzin, Kampik, Mangler, and
+  Rinderle-Ma]{conversational-process-modelling}
+N.~Klievtsova, J.-V. Benzin, T.~Kampik, J.~Mangler, and S.~Rinderle-Ma.
+\newblock Conversational process modelling: State of the art, applications, and
+  implications in practice, 2023.
+
+\bibitem[Maqbool et~al.(2019)Maqbool, Azam, Anwar, Butt, Zeb, Zafar, Nazir, and
+  Umair]{investigation-text-to-bpmn}
+B.~Maqbool, F.~Azam, M.~W. Anwar, W.~H. Butt, J.~Zeb, I.~Zafar, A.~K. Nazir,
+  and Z.~Umair.
+\newblock A comprehensive investigation of bpmn models generation from textual
+  requirements---techniques, tools and trends.
+\newblock In K.~J. Kim and N.~Baek, editors, \emph{Information Science and
+  Applications 2018}, pages 543--557, Singapore, 2019. Springer Singapore.
+\newblock ISBN 978-981-13-1056-0.
+
+\bibitem[{Microsoft Azure}(2024)]{azure-openai}
+{Microsoft Azure}.
+\newblock Azure openai service.
+\newblock
+  \url{https://azure.microsoft.com/de-de/products/ai-services/openai-service},
+  2024.
+\newblock Accessed: 2024-01-05.
+
+\bibitem[OMG(2011)]{omg2011bpmn}
+OMG.
+\newblock {Business Process Model and Notation (BPMN), Version 2.0}, January
+  2011.
+\newblock URL \url{https://www.omg.org/spec/BPMN/2.0/PDF}.
+
+\bibitem[Pietsch and Wenzel(2012)]{bpmn2-comformance}
+P.~Pietsch and S.~Wenzel.
+\newblock Comparison of bpmn2 diagrams.
+\newblock In J.~Mendling and M.~Weidlich, editors, \emph{Business Process Model
+  and Notation}, pages 83--97, Berlin, Heidelberg, 2012. Springer Berlin
+  Heidelberg.
+\newblock ISBN 978-3-642-33155-8.
+
+\bibitem[Suliman(2018)]{bpmn-conformance}
+A.~Suliman.
+\newblock Automatic multi-perspective conformance checking for bpmn models, 07
+  2018.
+\newblock URL \url{https://khazna.ku.ac.ae/files/6825449/file}.
+
+\bibitem[Van~Rossum and Drake(2009)]{python3}
+G.~Van~Rossum and F.~L. Drake.
+\newblock \emph{Python 3 Reference Manual}.
+\newblock CreateSpace, Scotts Valley, CA, 2009.
+\newblock ISBN 1441412697.
+
+\end{thebibliography}

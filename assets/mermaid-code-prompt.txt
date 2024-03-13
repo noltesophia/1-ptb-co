@@ -1,0 +1,45 @@
+Process description: {process_description}
+Rules for mermaid js flowcharts:
+The graph must use the LR (Left to Right) direction.
+Each mermaid js node must have the following structure:
+id:type:shape and text
+    id - it is a unique identifier. Integer from 1 to n. Each node has a unique identifier
+    type - defines the type of the element regarding to BPMN 2.0 notation. 
+        possible types are: start event, end event, task, exclusive gateway and parallel gateway. 
+        Based on the type of the node following shapes and texts are to be used:
+        startevent: ((startevent))     i.e., id:startevent:((startevent)) 
+        endevent: ((endevent))	      i.e., id:endevent:((endevent)) 
+        task: (task label)             i.e., id:task:(task label)
+        exclusivegateway: {{x}}          i.e., id:exclusivegateway:{{x}} 
+        parallelgateway: {{AND}}         i.e., id:exclusivegateway:{{AND}} 
+All nodes that have occurred more than once should have following structure: id:type: (i.e., 2:task: ) by futher occurrence. 
+It is strictly prohibited to use only id (i.e. 2) as a reference.   
+    all elements are connected with each other with the help of the direction.
+        direction: -->
+    if there are some conditions or annotations it is necessary to use text on links (i.e., edge labels)
+        edge label: |condition or annotation|
+    edge label is always located between 2 nodes: id:exclusivegateway:{{x}} --> |condition or annotation|id:task:(task label).
+You can represent a decision point in the process where it branches into multiple paths by using either an 'exclusive gateway' or a 'parallel gateway'. This is known as 'splitting' the control flow. Likewise, there could be points in the process where multiple paths merge back into one. This is known as 'joining' the control flow, which can also be done using either an 'exclusive gateway' or a 'parallel gateway'.
+When rejoining branched paths, it's essential to use the same type of gateway that was used to create the branch initially. For instance, if an exclusive gateway was used to split the flow, use an exclusive gateway to merge it back.
+Ensure that there are no duplicate sequences of tasks in your flowchart. If the same sequence of tasks happens rergardless of the path taken after a decision point, merge these paths back together using a gateway before proceeding with these tasks. This method avoids redundancy and enhances accuracy in your process representation.
+Consider the following example of a process description and the generated mermaid.js graph.
+Process description:
+I sit at home in the evening.
+If I am hungry, I am going to order a pizza and pay. If not, I am watching a movie.
+Finally, I will go to bed and sleep.
+Mermaid.js graph:
+```mermaid
+graph LR
+1:startevent:((startevent)) --> 2:task:(Sitting at home)
+2:task: --> 3:exclusivegateway:{{x}}
+3:exclusivegateway:{{x}} --> |Feeling hungry| 4:task:(Ordering a pizza)
+4:task: --> 5:task:(Paying for pizza)
+3:exclusivegateway:{{x}} --> |Not feeling hungry| 6:task:(Watching a movie)
+5:task: --> 7:exclusivegateway:{{x}}
+6:task: --> 7:exclusivegateway:
+7:exclusivegateway: --> 8:task:(Going to bed)
+8:task: --> 9:task:(Sleeping)
+9:task: --> 10:endevent:((endevent))
+```
+Activities: Considering the provided process description, create the list of activities (each 3-5 words maximum) one by one without any additional information. Strictly avoid duplicates. Do not output it.
+Considering the provided process description, a set of custom rules and the generated list of activities, create a valid mermaid.js graph.
